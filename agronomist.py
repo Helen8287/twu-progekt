@@ -12,12 +12,12 @@ class Agronomist():
 
     def watering(self):
         print(f"{self.name} поливает огород")
-        self.endurance -=1
+        self.endurance -=4
 
 
     def fertilizes(self):
        print(f"{self.name} удобряет огород")
-       self.endurance -= 1
+       self.endurance -= 2
 
 
     def weeding(self):
@@ -41,5 +41,29 @@ class Agronomist():
 agronom = Agronomist("Петр",10)
 agronom.plant()
 agronom.info()
+
+agr1 = Agronomist( name="Степан", endurance= 75)
+agr2 = Agronomist( name="Гриша", endurance= 88)
+
+print(agr1. name)
+print(agr1. endurance)
+print(agr2. name)
+print(agr2. endurance)
+
+agr1.sleep()
+agr1.eat()
+agr1.plant()
+agr1.watering()
+agr1.fertilizes()
+agr1.weeding()
+agr1.info()
+
+agr2.sleep()
+agr2.eat()
+agr2.plant()
+agr2.watering()
+agr2.fertilizes()
+agr2.weeding()
+agr2.info()
 
 
